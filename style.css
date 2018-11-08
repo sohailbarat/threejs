@@ -1,21 +1,19 @@
-#rcorners1{
-					
-    <!-- background: url(Images/b3.png);-->
-    background-repeat: repeat;
-    padding-top:20px;
 
-#table1{
-    padding-top: 100px;
-    
-    background-color: #D5D8DC
+.body{
+    background-color: rgb(158, 201, 204);
 
 }
 
-#p1{
+
+.td{
     text-align: justify;
 
 }
 
-#h3{
-    padding-top: 50px;
+.h3{
+    padding-top: 5px;
+}
+.img-thumbnail{
+                    width: 200;
+                    height: 200;
 }

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="author" content="Sohail Barat">
+    <meta name="description" content="Aviation Project for Web Application Course">
+    <meta http-equiv="refresh" content="30">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" /> 
+    <title> ThreeJS </title>
+	<style>
+		#blogpostinfo {
+			background-color: yellow;
+			}
+		#blogpost {
+			background-color: aqua;
+			}
+	</style>
+</head>
+<body>
+      <!-- Header -->
+      <!-- Hero Image -->
+      <!-- Main Content -->
+	<div class="container-fluid">
+		<h1>Blog Site Name</h1><br/><!--insert actual blog name here-->
+		<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-3">
+				<a href="https://x-team.com/blog/3d-webgl-threejs/">
+				<img border="0" alt="W3Schools" src="https://2013.portland.wordcamp.org/files/2013/05/X-Team-Two-Colour-Vertical-HIRES-624x695.png" 
+				width="200" height="200"></a>
+			</div>
+			<div class="col-sm-7" id="blogpostinfo">
+				<h2>Diving into 3D WebGL with Three.js</h2></br>
+				by Joseph Rex</br>
+				November 1st, 2018</br>
+				<p>The web has been the most used platform for software development since the start of
+				the 21st century as it transitioned from a document sharing platform to a home for
+				scalable applications.</p>
+			</div>
+			<div class="col-sm-1"></div>
+		</div><br />
+		
+		<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-3">
+				<a href="https://blog.jscrambler.com/getting-started-with-three-js">
+				<img border="0" alt="W3Schools" src="https://blog.jscrambler.com/content/images/2016/12/new-jscrambler-logo.png" 
+				width="200" height="200"></a>
+			</div>
+			<div class="col-sm-7" id="blogpostinfo">
+				<h2>Getting Started with Three.js</h2></br>
+				by Daniela Grams <br />
+				February 26th, 2018</br>
+				<p>3D graphics in the browser have been a hot topic ever since they were first
+				introduced. However, creating apps in pure WebGL takes ages. This is why libraries have
+				appeared, Three.js being one of the most popular. It is a nice...</p>
+			</div>
+			<div class="col-sm-1"></div>
+		</div><br />
+		
+		<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-3">
+				<a href="https://blog.openbloc.fr/gamedev-with-three-js-on-the-modern-web/">
+				<img border="0" alt="W3Schools" src="data:image/jpeg;base64,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"
+				width="200" height="200"></a>
+			</div>
+			<div class="col-sm-7" id="blogpostinfo">
+				<h2>Game Development with three.js</h2></br>
+				by Maxime Rouyrre</br>
+				April 20th, 2018</br>
+				<p>Back in November 2017 I started a journey in the world of game development
+				using the modern JavaScript toolchain and three.js. This article is kinda a summary
+				of the useful bits accumulated during ~3months of part-time work... </p>
+			</div>
+			<div class="col-sm-1"></div>
+		</div><br />	
+	</div>
+	
+	<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-10" id="blogpostinfo">
+				<h2>Diving into 3D WebGL with Three.js</h2></br>
+				by Joseph Rex</br>
+				January 26th, 2018</br>
+			</div>
+			<div class="col-sm-1"></div>
+		</div>
+	</div><br /><br />
+	<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-10" id="blogpost">
+				<p>The web has been the most used platform for software development
+				since the start of the 21st century as it transitioned from a document 
+				sharing platform to a home for scalable applications.
+				We have had the animation and gaming industry also move from traditional 
+				and 2D graphics/animations to 3D. More recently, there has been much 
+				innovation around virtual reality (VR) and augmented reality (AR), and 
+				most of that is also coming to the web.
+				As an organization that tries to stay at the top of trends and 
+				innovation, Google has just released Poly, a platform to browse and 
+				download 3D models and scenes.
+				This article is well timed, as we are only a few weeks away from December, 
+				the month of 3D — #3December. I hope the guide below helps you create 
+				stunning 3D art to be a part of it this year.</p>
+			</div>
+			<div class="col-sm-1"></div>
+		</div>
+	</div>
+      <!-- Footer -->
+ </body>
+</html>
+<!--change columns to 1-3-7-1
